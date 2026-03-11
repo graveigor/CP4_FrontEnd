@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+/* Navbar */
+
+.eco-navbar {
+    background-color: #2d6a4f;
+}
+
+.eco-navbar .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.eco-navbar .navbar-brand span {
+    color: #b7e4c7;
+}
+
+.eco-navbar .nav-link {
+    color: #fff;
+}
+
+.eco-navbar .nav-link:hover {
+    color: #b7e4c7;
+}
+
+.cart-btn {
+    background-color: #52b788;
+    border-radius: 6px;
+    padding: 6px 14px !important;
+}
+
+
+/* Carousel */
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.1) 60%);
+}
+
+.carousel-caption {
+    z-index: 2;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Cards */
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card {
+    border-radius: 8px;
+}
+
+.card-title {
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+.eco-footer {
+    background-color: #1b4332;
+    color: #fff;
+    padding: 40px 0 20px;
+}
+
+.eco-footer h5 {
+    color: #b7e4c7;
+    margin-bottom: 12px;
+}
+
+.eco-footer a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+.eco-footer a:hover {
+    color: #fff;
+}
+
+.footer-brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-brand span {
+    color: #b7e4c7;
+}
+
+.eco-footer hr {
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.copyright {
+    color: #aaa;
+    font-size: 0.85rem;
+}
+
+.social-icons a {
+    display: inline;
+    color: #b7e4c7;
+    margin-right: 12px;
+    font-size: 1.1rem;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}

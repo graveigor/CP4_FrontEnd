@@ -1,13 +1,333 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="style/index.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1 class="bg-black">EcoTrend</h1>
-    
+
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg eco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Eco<span>Trend</span></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto gap-1">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/categorias.html">Categorias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/contato.html">Contato</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="text-white-50 text-decoration-none"><i class="fas fa-search"></i></a>
+                    <a href="#" class="text-white-50 text-decoration-none"><i class="fas fa-user"></i></a>
+                    <a href="pages/categorias.html" class="nav-link cart-btn">
+                        <i class="fas fa-shopping-cart me-1"></i> Carrinho <span class="badge bg-white text-success ms-1">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrossel -->
+    <div id="promoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <!-- Banner um -->
+            <div class="carousel-item active">
+                <img src="assets/img/proteina.png" class="d-block w-100" alt="Proteína Vegana">
+                <div class="carousel-caption d-none d-md-block">
+                    <span class="badge bg-success mb-2">Oferta da semana</span>
+                    <h2>Proteína Vegana em Pó</h2>
+                    <p>Suplemento 100% vegetal, sabor baunilha. 1 kg — rico em aminoácidos essenciais.</p>
+                    <p>De R$ 149 por <strong>R$ 99,90</strong></p>
+                    <a href="#" class="btn btn-light">Ver oferta</a>
+                </div>
+            </div>
+
+            <!-- Banner dois -->
+            <div class="carousel-item">
+                <img src="assets/img/hidratante.jpg" class="d-block w-100" alt="Creme Hidratante">
+                <div class="carousel-caption d-none d-md-block">
+                    <span class="badge bg-success mb-2">Leve 3, Pague 2</span>
+                    <h2>Creme Hidratante Natural</h2>
+                    <p>Formulado com manteiga de karité e aloe vera. Sem ingredientes de origem animal.</p>
+                    <p>A partir de <strong>R$ 34,90</strong></p>
+                    <a href="#" class="btn btn-light">Aproveitar</a>
+                </div>
+            </div>
+
+            <!-- Banner três -->
+            <div class="carousel-item">
+                <img src="assets/img/skincare.webp" class="d-block w-100" alt="Kit Skincare">
+                <div class="carousel-caption d-none d-md-block">
+                    <span class="badge bg-success mb-2">Novidade</span>
+                    <h2>Kit Skincare Vegano</h2>
+                    <p>Sabonete, tônico e sérum em um único kit. Cruelty-free e certificado vegano.</p>
+                    <p>Kit por <strong>R$ 129,90</strong></p>
+                    <a href="#" class="btn btn-light">Comprar agora</a>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+    <!-- seção de produtos -->
+
+    <!-- beleza -->
+    <section class="container my-5">
+        <h4 class="mb-1 border-start border-success border-3 ps-2">Beleza</h4>
+        <p class="text-muted mb-4 small">Cosméticos 100% veganos e cruelty-free</p>
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/hidratante.jpg" class="card-img-top" alt="Creme Hidratante">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Mais vendido</span>
+                        <h6 class="card-title">Creme Hidratante Natural</h6>
+                        <p class="text-muted small">Karité e aloe vera · 200ml</p>
+                        <p class="fw-bold mb-3">R$ 34,90</p>
+                        <a href="product.html" class="btn btn-success btn-sm w-100">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/shampoo.png" class="card-img-top" alt="Shampoo Sólido">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark mb-2">Oferta</span>
+                        <h6 class="card-title">Shampoo Sólido Vegano</h6>
+                        <p class="text-muted small">Sem sulfato · 80g</p>
+                        <p class="fw-bold mb-3">R$ 29,90</p>
+                        <a href="product.html" class="btn btn-success btn-sm w-100">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/skincare.webp" class="card-img-top" alt="Kit Skincare">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Novidade</span>
+                        <h6 class="card-title">Kit Skincare Vegano</h6>
+                        <p class="text-muted small">Sabonete, tônico e sérum</p>
+                        <p class="fw-bold mb-3">R$ 129,90</p>
+                        <a href="product.html" class="btn btn-success btn-sm w-100">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-end mt-3">
+                <a href="categories.html" class="btn btn-outline-success btn-sm">Ver tudo em Beleza</a>
+            </div>
+    </section>
+
+    <hr class="container">
+
+    <!-- suplementos -->
+    <section class="container my-5">
+        <h4 class="mb-1 border-start border-success border-3 ps-2">Suplementos</h4>
+        <p class="text-muted mb-4 small">Nutrição esportiva 100% de origem vegetal</p>
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/proteina.png" class="card-img-top" alt="Proteína Vegana">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Oferta</span>
+                        <h6 class="card-title">Proteína Vegana em Pó</h6>
+                        <p class="text-muted small">Sabor baunilha · 1 kg</p>
+                        <p class="fw-bold mb-3">R$ 99,90</p>
+                        <a href="product.html" class="btn btn-success btn-sm w-100">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/creatina.png" class="card-img-top" alt="Creatina Vegana">
+                    <div class="card-body">
+                        <h6 class="card-title">Creatina Monohidratada</h6>
+                        <p class="text-muted small">Vegana · 300g</p>
+                        <p class="fw-bold mb-3">R$ 79,90</p>
+                        <a href="product.html" class="btn btn-success btn-sm w-100">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/vitaminab12.webp" class="card-img-top" alt="Vitamina B12">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark mb-2">Essencial</span>
+                        <h6 class="card-title">Vitamina B12 Vegana</h6>
+                        <p class="text-muted small">60 cápsulas</p>
+                        <p class="fw-bold mb-3">R$ 39,90</p>
+                        <a href="product.html" class="btn btn-success btn-sm w-100">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-end mt-3">
+            <a href="categories.html" class="btn btn-outline-success btn-sm">Ver tudo em Suplementos</a>
+        </div>
+    </section>
+
+    <hr class="container">
+
+    <!-- casa e limpeza -->
+    <section class="container my-5">
+        <h4 class="mb-1 border-start border-success border-3 ps-2">Casa & Limpeza</h4>
+        <p class="text-muted mb-4 small">Produtos de limpeza biodegradáveis e sustentáveis</p>
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/detergente.png" class="card-img-top" alt="Detergente Natural">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Biodegradável</span>
+                        <h6 class="card-title">Detergente Natural</h6>
+                        <p class="text-muted small">Limão e coco · 500ml</p>
+                        <p class="fw-bold mb-3">R$ 18,90</p>
+                        <a href="product.html" class="btn btn-success btn-sm w-100">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/sabao.webp" class="card-img-top" alt="Sabão em Barra">
+                    <div class="card-body">
+                        <h6 class="card-title">Sabão em Barra Vegano</h6>
+                        <p class="text-muted small">Lavanda · 200g</p>
+                        <p class="fw-bold mb-3">R$ 12,90</p>
+                        <a href="product.html" class="btn btn-success btn-sm w-100">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/esponja.jpg" class="card-img-top" alt="Esponja Vegetal">
+                    <div class="card-body">
+                        <h6 class="card-title">Esponja de Loofah</h6>
+                        <p class="text-muted small">100% natural · Kit com 3</p>
+                        <p class="fw-bold mb-3">R$ 19,90</p>
+                        <a href="product.html" class="btn btn-success btn-sm w-100">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-end mt-3">
+            <a href="categories.html" class="btn btn-outline-success btn-sm">Ver tudo em Casa & Limpeza</a>
+        </div>
+    </section>
+
+    <hr class="container">
+
+    <!-- roupas e acessórios -->
+    <section class="container my-5">
+        <h4 class="mb-1 border-start border-success border-3 ps-2">Roupas & Acessórios</h4>
+        <p class="text-muted mb-4 small">Moda sustentável sem couro, lã ou seda animal</p>
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/camiseta.webp" class="card-img-top" alt="Camiseta Orgânica">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Algodão orgânico</span>
+                        <h6 class="card-title">Camiseta Orgânica Unissex</h6>
+                        <p class="text-muted small">Várias cores · P ao GG</p>
+                        <p class="fw-bold mb-3">R$ 79,90</p>
+                        <a href="product.html" class="btn btn-success btn-sm w-100">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/tenis.webp" class="card-img-top" alt="Tênis Vegano">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark mb-2">Novidade</span>
+                        <h6 class="card-title">Tênis Vegano Casual</h6>
+                        <p class="text-muted small">Sem couro · 34 ao 44</p>
+                        <p class="fw-bold mb-3">R$ 249,90</p>
+                        <a href="product.html" class="btn btn-success btn-sm w-100">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/bolsa.jpg" class="card-img-top" alt="Bolsa Vegana">
+                    <div class="card-body">
+                        <h6 class="card-title">Bolsa em Couro Vegano</h6>
+                        <p class="text-muted small">Material PU sustentável</p>
+                        <p class="fw-bold mb-3">R$ 159,90</p>
+                        <a href="product.html" class="btn btn-success btn-sm w-100">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-end mt-3">
+            <a href="categories.html" class="btn btn-outline-success btn-sm">Ver tudo em Roupas & Acessórios</a>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer class="eco-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">Eco<span>Trend</span></div>
+                    <p style="font-size:0.88rem; max-width:280px; line-height:1.7;">
+                        Somos um e-commerce comprometido com a sustentabilidade e o futuro do planeta, oferecendo produtos que fazem a diferença.
+                    </p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Navegação</h5>
+                    <a href="index.html">Home</a>
+                    <a href="pages/categorias.html">Categorias</a>
+                    <a href="pages/produtos.html">Produtos</a>
+                    <a href="pages/contato.html">Contato</a>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Categorias</h5>
+                    <a href="pages/categorias.html">Roupas</a>
+                    <a href="pages/categorias.html">Beleza</a>
+                    <a href="pages/categorias.html">Casa</a>
+                    <a href="pages/categorias.html">Tech Verde</a>
+                </div>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <p class="copyright mb-0">© 2025 EcoTrend. Todos os direitos reservados.</p>
+                <p class="copyright mb-0">Desenvolvido com <i class="fas fa-heart" style="color:var(--terracotta);"></i> para o planeta</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
