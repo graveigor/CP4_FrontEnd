@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="/style/index.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg eco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Eco<span>Trend</span></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto gap-1">
+                    <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/categorias.html">Categorias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/contato.html">Contato</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="text-white-50 text-decoration-none"><i class="fas fa-search"></i></a>
+                    <a href="#" class="text-white-50 text-decoration-none"><i class="fas fa-user"></i></a>
+                    <a href="pages/categorias.html" class="nav-link cart-btn">
+                        <i class="fas fa-shopping-cart me-1"></i> Carrinho <span
+                            class="badge bg-white text-success ms-1">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <footer class="eco-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">Eco<span>Trend</span></div>
+                    <p style="font-size:0.88rem; max-width:280px; line-height:1.7;">
+                        Somos um e-commerce comprometido com a sustentabilidade e o futuro do planeta, oferecendo
+                        produtos que fazem a diferença.
+                    </p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Navegação</h5>
+                    <a href="index.html">Home</a>
+                    <a href="pages/categorias.html">Categorias</a>
+                    <a href="pages/produtos.html">Produtos</a>
+                    <a href="pages/contato.html">Contato</a>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Categorias</h5>
+                    <a href="pages/categorias.html">Roupas</a>
+                    <a href="pages/categorias.html">Beleza</a>
+                    <a href="pages/categorias.html">Casa</a>
+                    <a href="pages/categorias.html">Tech Verde</a>
+                </div>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <p class="copyright mb-0">© 2026 EcoTrend. Todos os direitos reservados.</p>
+                <p class="copyright mb-0">Desenvolvido com <i class="fas fa-heart" style="color:var(--terracotta);"></i>
+                    para o planeta</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
