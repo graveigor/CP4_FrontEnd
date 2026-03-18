@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "nome": "Creme Hidratante Natural",
+        "img": "assets/img/hidratante.jpg",
+        "desc": "Karité e aloe vera · 200ml",
+        "preco": "R$ 34,90",
+        "categoria": "vegano"
+    },
+    {
+        "id": 2,
+        "nome": "Proteína Vegana em Pó",
+        "img": "assets/img/proteina.png",
+        "desc": "Sabor baunilha · 1 kg",
+        "preco": "R$ 99,90",
+        "categoria": "suplemento"
+    },
+    {
+        "id": 3,
+        "nome": "Shampoo Sólido Vegano",
+        "img": "/assets/img/shampoo.png",
+        "desc": "Sem sulfato · 80g",
+        "preco": "R$ 29,90",
+        "categoria": "vegano"
+    },
+    {
+        "id": 4,
+        "nome": "Kit Skincare Vegano",
+        "img": "/assets/img/skincare.webp",
+        "desc": "Sabonete, tônico e sérum",
+        "preco": "R$ 129,90",
+        "categoria": "vegano"
+    },
+    {
+        "id": 5,
+        "nome": "Creatina Monohidratada",
+        "img": "/assets/img/creatina.png",
+        "desc": "Vegana · 300g",
+        "preco": "R$ 79,90",
+        "categoria": "suplemento"
+    },
+    {
+        "id": 6,
+        "nome": "Vitamina B12 Vegana",
+        "img": "/assets/img/vitaminab12.webp",
+        "desc": "60 cápsulas",
+        "preco": "R$ 39,90",
+        "categoria": "suplemento"
+    },
+    {
+        "id": 7,
+        "nome": "Detergente Natural",
+        "img": "/assets/img/detergente.png",
+        "desc": "Limão e coco · 500ml",
+        "preco": "R$ 18,90",
+        "categoria": "limpeza"
+    },
+    {
+        "id": 8,
+        "nome": "Sabão em Barra Vegano",
+        "img": "/assets/img/sabao.webp",
+        "desc": "Lavanda · 200g",
+        "preco": "R$ 12,90",
+        "categoria": "limpeza"
+    },
+    {
+        "id": 9,
+        "nome": "Esponja de Loofah",
+        "img": "/assets/img/sabao.webp",
+        "desc": "100% natural · Kit com 3",
+        "preco": "R$ 19,90",
+        "categoria": "limpeza"
+    },
+    {
+        "id": 10,
+        "nome": "Camiseta Orgânica Unissex",
+        "img": "/assets/img/camiseta.webp",
+        "desc": "Várias cores · P ao GG",
+        "preco": "R$ 79,90",
+        "categoria": "roupa"
+    },
+    {
+        "id": 11,
+        "nome": "Tênis Vegano Casual",
+        "img": "/assets/img/tenis.webp",
+        "desc": "Sem couro · 34 ao 44",
+        "preco": "R$ 249,90",
+        "categoria": "roupa"
+    },
+    {
+        "id": 12,
+        "nome": "Bolsa em Couro Vegano",
+        "img": "/assets/img/bolsa.jpg",
+        "desc": "Material PU sustentável",
+        "preco": "R$ 159,90",
+        "categoria": "roupa"
+    }
+]

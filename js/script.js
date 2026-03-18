@@ -1,20 +1,18 @@
-BD = [
-    { id: 1, nome: "Creme Hidratante Natural", img: "assets/img/hidratante.jpg", desc: "Karité e aloe vera · 200ml", preco: "R$ 34,90" },
-    { id: 2, nome: "CREMINHO", img: "assets/img/hidratante.jpg", desc: "Karité e aloe vera · 200ml", preco: "R$ 34,90" }
-]
-
 const pedirProdutos = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(BD)
-        }, 500)
+            resolve(fetch("/js/produtos.json"))
+        }, 200)
     })
 }
 
 let produtos = []
-const renderProdutos = (arr) => {
+const renderProdutos = (produtos) => {
     let produtosVeganos = document.getElementById("produtos-veganos")
-    arr.forEach(produto => {
+    let produtosSuplementos = document.getElementById("produtos-suplementos")
+    let produtosLimpeza = document.getElementById("produtos-limpeza")
+    let produtosRoupas = document.getElementById("produtos-roupas")
+    produtos.forEach(produto => {
         let col = document.createElement("div")
         col.setAttribute("class", "col-6 col-md-4 col-lg-3")
 
@@ -53,13 +51,26 @@ const renderProdutos = (arr) => {
         card.appendChild(img)
         card.appendChild(cardBody)
         col.appendChild(card)
-        produtosVeganos.appendChild(col)
+
+
+        if (produto.categoria == "vegano") {
+            produtosVeganos.appendChild(col)
+        }else if(produto.categoria == "suplemento"){
+            produtosSuplementos.appendChild(col)
+        }else if(produto.categoria == "limpeza"){
+            produtosLimpeza.appendChild(col)
+        }else if(produto.categoria == "roupa"){
+            produtosRoupas.appendChild(col)
+        }
     });
 }
 
 
 pedirProdutos()
     .then((res) => {
-        produtos = res
+        return res.json();
+    })
+    .then((dadosConvertidos) => {
+        produtos = dadosConvertidos;
         renderProdutos(produtos)
     })
