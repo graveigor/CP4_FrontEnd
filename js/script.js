@@ -140,7 +140,8 @@ document.addEventListener("click", (e) => {
         let btn = e.target.closest(".btn-adicionar")
         let id = btn.getAttribute("data-id")
         let nome = btn.getAttribute("data-nome")
-        let preco = parseFloat(btn.getAttribute("data-preco"))
+        let precoTexto = btn.getAttribute("data-preco")
+        let preco = parseFloat(precoTexto.replace("R$", "").replace(",", ".").trim())
  
         let encontrado = null
         for (let i = 0; i < carrinho.length; i++) {
