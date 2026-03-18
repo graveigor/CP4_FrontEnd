@@ -80,6 +80,10 @@ pedirProdutos()
 
 let carrinho = []
  
+if (localStorage.getItem("meuCarrinho")) {
+    carrinho = JSON.parse(localStorage.getItem("meuCarrinho"));
+}
+
 let sidebar = document.querySelector("#carrinho-sidebar")
 let overlay = document.querySelector("#carrinho-overlay")
 let lista = document.querySelector("#carrinho-lista")
@@ -133,6 +137,8 @@ const atualizarCarrinho = () => {
     }
     totalEl.textContent = "R$ " + soma.toFixed(2).replace(".", ",")
     qtdEl.textContent = qtdTotal
+
+    localStorage.setItem("meuCarrinho", JSON.stringify(carrinho));
 }
  
 document.addEventListener("click", (e) => {
@@ -195,3 +201,4 @@ lista.addEventListener("click", (e) => {
 })
  
 atualizarCarrinho()
+
