@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categorias</title>
+    <title>Catálogo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="/style/index.css" rel="stylesheet">
@@ -15,14 +15,14 @@
 <body>
     <nav class="navbar navbar-expand-lg eco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Eco<span>Trend</span></a>
+            <a class="navbar-brand" href="../index.html">Eco<span>Trend</span></a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <i class="fas fa-bars text-white"></i>
             </button>
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav mx-auto gap-1">
                     <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/pages/categorias.html">Categorias</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/pages/categorias.html">Catálogo</a></li>
                     <li class="nav-item"><a class="nav-link" href="/pages/produtos.html">Produtos</a></li>
                     <li class="nav-item"><a class="nav-link" href="/pages/contato.html">Contato</a></li>
                 </ul>
@@ -38,7 +38,6 @@
         </div>
     </nav>
 
-    <!-- Sidebar-->
     <div class="carrinho-overlay" id="carrinho-overlay"></div>
     <aside class="carrinho-sidebar" id="carrinho-sidebar">
         <div class="carrinho-header">
@@ -128,7 +127,6 @@
             <p class="mt-sm-3" id="contador-produtos"><b>12</b> produtos encontrados</p>
             <div id="grid-produtos">
 
-                <!-- ID 1 — Beleza -->
                 <div class="card produto-card" style="width: auto;"
                      data-categoria="beleza" data-tipo="organico" data-estrelas="4">
                     <img src="/assets/img/hidratante.jpg" class="card-img-top" alt="...">
@@ -136,23 +134,21 @@
                         <h5 class="card-title">Creme Hidratante Natural</h5>
                         <p class="card-text">Karité e aloe vera · 200ml</p>
                         <p><b>R$ 34,90</b></p>
-                        <a href="/pages/produtos.html" class="btn btn-success">Comprar</a>
+                        <a href="/pages/produtos.html?id=1" class="btn btn-success">Comprar</a>
                     </div>
                 </div>
 
-                <!-- ID 2 — Suplemento -->
                 <div class="card produto-card" style="width: auto;"
-                     data-categoria="suplemento" data-tipo="vegano" data-estrelas="2">
+                     data-categoria="suplemento" data-tipo="vegano" data-estrelas="4">
                     <img src="/assets/img/proteina.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Proteína Vegana em Pó</h5>
                         <p class="card-text">Sabor baunilha · 1 kg</p>
                         <p><b>R$ 99,90</b></p>
-                        <a href="/pages/produtos.html" class="btn btn-success">Comprar</a>
+                        <a href="/pages/produtos.html?id=2" class="btn btn-success">Comprar</a>
                     </div>
                 </div>
 
-                <!-- ID 3 — Beleza -->
                 <div class="card produto-card" style="width: auto;"
                      data-categoria="beleza" data-tipo="vegano" data-estrelas="5">
                     <img src="/assets/img/shampoo.png" class="card-img-top" alt="...">
@@ -160,11 +156,10 @@
                         <h5 class="card-title">Shampoo Sólido Vegano</h5>
                         <p class="card-text">Sem sulfato · 80g</p>
                         <p><b>R$ 29,90</b></p>
-                        <a href="/pages/produtos.html" class="btn btn-success">Comprar</a>
+                        <a href="/pages/produtos.html?id=3" class="btn btn-success">Comprar</a>
                     </div>
                 </div>
 
-                <!-- ID 4 — Beleza -->
                 <div class="card produto-card" style="width: auto;"
                      data-categoria="beleza" data-tipo="vegano" data-estrelas="5">
                     <img src="/assets/img/skincare.webp" class="card-img-top" alt="...">
@@ -172,11 +167,10 @@
                         <h5 class="card-title">Kit Skincare Vegano</h5>
                         <p class="card-text">Sabonete, tônico e sérum</p>
                         <p><b>R$ 129,90</b></p>
-                        <a href="/pages/produtos.html" class="btn btn-success">Comprar</a>
+                        <a href="/pages/produtos.html?id=4" class="btn btn-success">Comprar</a>
                     </div>
                 </div>
 
-                <!-- ID 5 — Suplemento -->
                 <div class="card produto-card" style="width: auto;"
                      data-categoria="suplemento" data-tipo="vegano" data-estrelas="5">
                     <img src="/assets/img/creatina.png" class="card-img-top" alt="...">
@@ -184,23 +178,21 @@
                         <h5 class="card-title">Creatina Monohidratada</h5>
                         <p class="card-text">Vegana · 300g</p>
                         <p><b>R$ 79,90</b></p>
-                        <a href="/pages/produtos.html" class="btn btn-success">Comprar</a>
+                        <a href="/pages/produtos.html?id=5" class="btn btn-success">Comprar</a>
                     </div>
                 </div>
 
-                <!-- ID 6 — Suplemento -->
                 <div class="card produto-card" style="width: auto;"
-                     data-categoria="suplemento" data-tipo="vegano" data-estrelas="1">
+                     data-categoria="suplemento" data-tipo="vegano" data-estrelas="5">
                     <img src="/assets/img/vitaminab12.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Vitamina B12 Vegana</h5>
                         <p class="card-text">60 cápsulas</p>
                         <p><b>R$ 39,90</b></p>
-                        <a href="/pages/produtos.html" class="btn btn-success">Comprar</a>
+                        <a href="/pages/produtos.html?id=6" class="btn btn-success">Comprar</a>
                     </div>
                 </div>
 
-                <!-- ID 7 — Casa -->
                 <div class="card produto-card" style="width: auto;"
                      data-categoria="casa" data-tipo="biodegradavel" data-estrelas="3">
                     <img src="/assets/img/detergente.png" class="card-img-top" alt="...">
@@ -208,11 +200,10 @@
                         <h5 class="card-title">Detergente Natural</h5>
                         <p class="card-text">Limão e coco · 500ml</p>
                         <p><b>R$ 18,90</b></p>
-                        <a href="/pages/produtos.html" class="btn btn-success">Comprar</a>
+                        <a href="/pages/produtos.html?id=7" class="btn btn-success">Comprar</a>
                     </div>
                 </div>
 
-                <!-- ID 8 — Casa -->
                 <div class="card produto-card" style="width: auto;"
                      data-categoria="casa" data-tipo="vegano,biodegradavel" data-estrelas="4">
                     <img src="/assets/img/sabao.webp" class="card-img-top" alt="...">
@@ -220,35 +211,32 @@
                         <h5 class="card-title">Sabão em Barra Vegano</h5>
                         <p class="card-text">Lavanda · 200g</p>
                         <p><b>R$ 12,90</b></p>
-                        <a href="/pages/produtos.html" class="btn btn-success">Comprar</a>
+                        <a href="/pages/produtos.html?id=8" class="btn btn-success">Comprar</a>
                     </div>
                 </div>
 
-                <!-- ID 9 — Casa -->
                 <div class="card produto-card" style="width: auto;"
                      data-categoria="casa" data-tipo="organico,biodegradavel" data-estrelas="4">
-                    <img src="/assets/img/esponja.jpg" class="card-img-top" alt="...">
+                    <img src="/assets/img/sabao.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Esponja de Loofah</h5>
                         <p class="card-text">100% natural · Kit com 3</p>
                         <p><b>R$ 19,90</b></p>
-                        <a href="/pages/produtos.html" class="btn btn-success">Comprar</a>
+                        <a href="/pages/produtos.html?id=9" class="btn btn-success">Comprar</a>
                     </div>
                 </div>
 
-                <!-- ID 10 — Roupas -->
                 <div class="card produto-card" style="width: auto;"
-                     data-categoria="roupas" data-tipo="organico" data-estrelas="2">
+                     data-categoria="roupas" data-tipo="organico" data-estrelas="5">
                     <img src="/assets/img/camiseta.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Camiseta Orgânica Unissex</h5>
                         <p class="card-text">Várias cores · P ao GG</p>
                         <p><b>R$ 79,90</b></p>
-                        <a href="/pages/produtos.html" class="btn btn-success">Comprar</a>
+                        <a href="/pages/produtos.html?id=10" class="btn btn-success">Comprar</a>
                     </div>
                 </div>
 
-                <!-- ID 11 — Roupas -->
                 <div class="card produto-card" style="width: auto;"
                      data-categoria="roupas" data-tipo="vegano,reciclado" data-estrelas="4">
                     <img src="/assets/img/tenis.webp" class="card-img-top" alt="...">
@@ -256,11 +244,10 @@
                         <h5 class="card-title">Tênis Vegano Casual</h5>
                         <p class="card-text">Sem couro · 34 ao 44</p>
                         <p><b>R$ 249,90</b></p>
-                        <a href="/pages/produtos.html" class="btn btn-success">Comprar</a>
+                        <a href="/pages/produtos.html?id=11" class="btn btn-success">Comprar</a>
                     </div>
                 </div>
 
-                <!-- ID 12 — Roupas -->
                 <div class="card produto-card" style="width: auto;"
                      data-categoria="roupas" data-tipo="vegano,reciclado" data-estrelas="4">
                     <img src="/assets/img/bolsa.jpg" class="card-img-top" alt="...">
@@ -268,7 +255,7 @@
                         <h5 class="card-title">Bolsa em Couro Vegano</h5>
                         <p class="card-text">Material PU sustentável</p>
                         <p><b>R$ 159,90</b></p>
-                        <a href="/pages/produtos.html" class="btn btn-success">Comprar</a>
+                        <a href="/pages/produtos.html?id=12" class="btn btn-success">Comprar</a>
                     </div>
                 </div>
 
@@ -300,10 +287,10 @@
                 </div>
                 <div class="col-6 col-lg-2">
                     <h5>Categorias</h5>
-                    <a href="pages/categorias.html">Roupas</a>
-                    <a href="pages/categorias.html">Beleza</a>
-                    <a href="pages/categorias.html">Casa</a>
-                    <a href="pages/categorias.html">Tech Verde</a>
+                    <a href="/pages/categorias.html">Roupas</a>
+                    <a href="/pages/categorias.html">Beleza</a>
+                    <a href="/pages/categorias.html">Casa</a>
+                    <a href="/pages/categorias.html">Tech Verde</a>
                 </div>
             </div>
             <hr />
